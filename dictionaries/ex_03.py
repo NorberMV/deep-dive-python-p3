@@ -1,5 +1,6 @@
 """This is what setdefault does under the hood"""
 
+
 def insert_if_not_present(d, key, value):
     if key not in d:
         d[key] = value
