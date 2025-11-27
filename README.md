@@ -2,10 +2,6 @@
 
 Exercises from the Udemy course "Deep Dive Python Part 3".
 
-## License
-Copyright (c) 2025 norbermv
-Licensed under the MIT License.
-
 ## Exercises
 
 ### Dictionaries
