@@ -1,20 +1,20 @@
 """
 First exercise
-# input: 
+# input:
 composers = {'Johann': 65, 'Ludwig': 56, 'Frederic': 39, 'Wolfgang': 35}
 
 # output:
 sorted_composers = {'Wolfgang': 35,
-                    'Frederic': 39, 
+                    'Frederic': 39,
                     'Ludwig': 56,
                     'Johann': 65}
 """
-## First version
+# First version
 # def sorting_dict(dict_input: dict) -> dict:
 #     tuple_items = []
 #     for i in dict_input.items():
 #         tuple_items.append(i)
-    
+
 #     return dict(sorted(tuple_items, key=lambda x: x[1]))
 
 # Second version
@@ -25,7 +25,7 @@ sorted_composers = {'Wolfgang': 35,
 # # Third version
 # def sorting_dict(dict_input: dict) -> dict:
 #     sorted_dict = {
-#         k:v 
+#         k:v
 #         for k, v in sorted(dict_input.items(), key=lambda element: element[1])
 #     }
 #     return sorted_dict
@@ -39,6 +39,7 @@ class Composer:
     def __repr__(self):
         return repr((self.name, self.age))
 
+
 composer_objects = [
     Composer('Johann', 65),
     Composer('Ludwig', 56),
@@ -48,13 +49,13 @@ composer_objects = [
 
 
 if __name__ == "__main__":
-    
+
     # composers = {
-    #     'Johann': 65, 
-    #     'Ludwig': 56, 
-    #     'Frederic': 39, 
+    #     'Johann': 65,
+    #     'Ludwig': 56,
+    #     'Frederic': 39,
     #     'Wolfgang': 35
     # }
     # print(sorting_dict(composers))
-    
+
     print(sorted(composer_objects, key=lambda elements: elements.age))
