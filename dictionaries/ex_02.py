@@ -4,7 +4,7 @@ import json
 
 def character_counter(text):
     counts = dict()
-    
+
     for char in text:
         counts[char] = counts.get(char, 0) + 1
 
